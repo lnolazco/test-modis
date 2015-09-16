@@ -3,10 +3,9 @@ Test with html5 css3 less bootstrap angularjs
 
 ## Requeriments
 
-- npm
-- bower
-- git
-- http-server
+- <a href="https://nodejs.org/en/">node</a>
+- <a href="http://bower.io/#install-bower">bower</a>
+- <a href="https://www.npmjs.com/package/http-server">http-server package</a>
 
 ## Installation
 

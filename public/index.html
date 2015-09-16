@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="myTest">
+  <head>
+    <meta charset="utf-8">
+    <title>Test Modis</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body ng-controller="mainCtrl">
+    <div class="header">
+      <div class="col-md-3 col-xs-5">
+        <img src="img/logo.png" class="logo" />
+      </div>
+      <div class="col-md-9 col-xs-7 page-title">
+        <div class="row">WEB</div>
+        <div class="row">DESIGN</div>
+        <div class="row">BLOG</div>
+      </div>
+    </div>
+    <div class="news-content menu col-md-12 col-xs-12">
+      <div class="col-md-offset-3 col-md-2 col-xs-offset-5 col-xs-2">HOME</div>
+      <div class="col-md-2 col-xs-2">ABOUT</div>
+      <div class="col-md-2 col-xs-3">PORTFOLIO</div>
+      <div class="col-md-2 col-md-offset-1 col-xs-offset-5 col-xs-2">BLOG</div>
+    </div>
+    <div class="body">
+      <table class="table table-striped">
+        <tbody>
+          <tr ng-repeat="info in news">
+            <td >
+              <span class="news-title col-md-offset-3 col-md-9 col-xs-offset-5 col-xs-7">{{info.title}}</span>
+              <div class="col-md-3 col-xs-5 rate">
+                <div rate value="info.rate" min=0 max=10></div>
+              </div>
+              <div class="col-md-9 col-xs-7">
+                <p class="news-content" ng-repeat="paragraph in info.paragraphs">{{paragraph}}</p>
+                <span class="tags" ng-repeat="tag in info.tags">{{tag}}</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer2">
+      <div class="col-md-offset-3 col-xs-offset-5"><p class="col-md-9">Copyright 2015</p></div>
+    </div>
+<!--javascrips-->
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+  <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="app/controller.js"></script>
+  <script src="app/directive.js"></script>
+  <script src="app/service.js"></script>
+  <script src="app/app.js"></script>
+  </body>
+</html>

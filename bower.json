@@ -1,0 +1,30 @@
+{
+  "name": "test modis",
+  "version": "1.0.0",
+  "authors": [
+    "Luis Nolazco <lnolazco@gmail.com>"
+  ],
+  "description": "test with html5 css3 less bootstrap angularjs",
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "html5",
+    "css3",
+    "bootstrap",
+    "angularjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.3",
+  }
+}
